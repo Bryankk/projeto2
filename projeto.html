@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <link rel="icon" href="imagens/icon.png">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
@@ -13,6 +14,14 @@
             <h1 id="titulo">Acompanhamento Semanal!</h1>
         </main>
     </div>
+    <nav class="navbar navbar-light bg-light">
+        <a href=gerenciador.html>Gerenciador</a>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </nav>
+    
     <div>
         <form id="pagina1">
             <p>Olá Compassiano(a)!!</p>
@@ -29,9 +38,14 @@
                     <input type="radio" name="resposta2"/> Ambos
                 <h2>3.Comentar:</h2>
                     <textarea id="comentario"></textarea>
+                <div class="botao">
+                    <button type="button" class="btn btn-primary">enviar</button>
+                </div>
             </form>
+
         </form>
     </div>
-    
-
 </body>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</html>

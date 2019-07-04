@@ -56,10 +56,30 @@ main {
     margin-top: 1%;
 }
 
+#gerenciador {
+    background-color: rgb(0, 80, 201);
+    height:26px;
+    color: #FFF;
+}
+
 #pagina {
     margin-left: 30px;
 }
 
+#gear {
+    height:25px;
+    float: left;
+    margin-left: 5px;
+}
+
 img {
     position: absolute;
+}
+
+#botao {
+    padding-left: 10px;
+}
+
+#branco {
+    color: #FFF;
 }
