@@ -14,30 +14,41 @@
             <h2 id="titulo">Acompanhamento Semanal!</h2>
         </main>
     </div>
-    <nav class="navbar navbar-light bg-light" class="tamanho-navbar">
-        <a href="gerenciador.html"><button class="btn btn-outline-primary">Gerenciador</button></a>
-      </nav>
-    
+        <nav class="navbar navbar-light bg-light">
+            <a href="gerenciador.html"><button class="btn btn-outline-primary">Gerenciador</button></a>
+        </nav>
     <div class="container">
         <form id="pagina1">
             <div class="introducao">
                 <p>Olá Compassiano(a)!!</p>
-                <p>Obrigado por participar do nosso processo de acompanhamento semanal, é muito importante sabermos como anda o sentimento da nossa equipe!
-                    Olá, Ao submeter este formulário, o proprietário verá o seu nome e endereço de e-mail.</p>
+                <p>Obrigado por participar do nosso processo de acompanhamento semanal, é muito importante sabermos como anda o sentimento da nossa equipe!</p>
+                <p>Olá, Ao submeter este formulário, o proprietário verá o seu nome e endereço de e-mail.</p>
             </div>
             <form id="formulário">
                 <h2>1.Como você está se sentindo essa semana?</h2>
-                    <input type="radio" class="resposta" name="resposta1"/> Estou bem!
-                    <input type="radio" class="resposta" name="resposta1"/> Tenho um ponto de atenção!
-                    <input type="radio" class="resposta" name="resposta1"/> Não estou contente!
+                    <div class="escolha">
+                        <input type="radio" class="resposta" name="resposta1"/> Estou bem!
+                    </div>
+                    <div class="escolha">
+                        <input type="radio" class="resposta" name="resposta1"/> Tenho um ponto de atenção!
+                    </div>
+                    <div class="escolha">
+                        <input type="radio" class="resposta" name="resposta1"/> Não estou contente!
+                    </div>
                 <h2>2.O sentimento preenchido é em relação a motivos:</h2>
-                    <input type="radio" class="resposta" name="resposta2"/> Profissionais
-                    <input type="radio" class="resposta" name="resposta2"/> Pessoais
-                    <input type="radio" class="resposta" name="resposta2"/> Ambos
+                    <div class="escolha">
+                        <input type="radio" class="resposta" name="resposta2"/> Profissionais
+                    </div>
+                    <div class="escolha">
+                        <input type="radio" class="resposta" name="resposta2"/> Pessoais
+                    </div>
+                    <div class="escolha">
+                        <input type="radio" class="resposta" name="resposta2"/> Ambos
+                    </div>
                 <h2>3.Comentar:</h2>
                     <textarea id="comentario"></textarea>
                 <div class="botao">
-                    <a href="agradecimentos.html"><button type="button" class="btn btn-success" id="enviar">Enviar</button></a>
+                    <a href="agradecimentos.html"><button type="button" class="btn btn-success" id="enviar" disabled>Enviar</button></a>
                 </div>
             </form>
 
