@@ -51,10 +51,6 @@ img {
     position: absolute;
 }
 
-#resposta {
-    float: left;
-}
-
 .list-group {
     margin-top: 20px;
 }
@@ -71,10 +67,6 @@ img {
     padding-left: 20px;
 }
 
-.centro {
-    padding-left: 20%;
-}
-
 .refazer {
     padding-top: 20px;
     padding-left: 180px;
@@ -86,4 +78,13 @@ img {
 
 p {
     margin-bottom: 10px;
+}
+
+.form-control {
+    width: 158px;
+    margin-left: 10px;
+}
+
+.centro {
+    padding-left: 20%;
 }

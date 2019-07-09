@@ -16,22 +16,19 @@
     </div>
     <nav class="navbar navbar-light bg-light">
       <a href="projeto.html"><button class="btn btn-outline-primary">Inicio</button></a>
-      <button type="button" class="btn btn-outline-success">
-          De bem <span class="badge badge-primary badge-pill">2</span>
-      </button>
-      <button type="button" class="btn btn-outline-warning">
-          Um ponto <span class="badge badge-primary badge-pill">1</span>
-      </button>
-      <button type="button" class="btn btn-outline-danger">
-          De mau <span class="badge badge-primary badge-pill">1</span>
-      </button>
       <form class="form-inline">
+        <select class="form-control">
+            <option disabled selected>Tipo de Situação</option>
+            <option>Bem</option>
+            <option>Ponto de atenção</option>
+            <option>Mau</option>
+        </select>
         <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
         <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Pesquisar</button>
       </form>
     </nav>
-    <div class="container" class="centro">
-      <div class="list-group">
+    <div class="container">
+      <div id="nomes" class="list-group">
           <a href="#" class="list-group-item list-group-item-action list-group-item-success">Irineu Silva</a>
           <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Maria Santos</a>
           <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Jessica Perera</a>
