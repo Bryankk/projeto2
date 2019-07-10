@@ -88,3 +88,23 @@ p {
 .centro {
     padding-left: 20%;
 }
+
+#login {
+    margin-top: 15%;
+    padding-left: 29%;
+}
+
+#irineu {
+    margin-bottom: 20px;
+}
+
+.logar-button {
+    margin-left: 105px;
+}
+
+.logo-login {
+    height: 120px;
+    width: 120px;
+    margin-left: 45%;
+    margin-top: 50px;
+}
