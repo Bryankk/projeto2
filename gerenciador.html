@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-    <div id="header">
+  <div id="header">
         <main>
             <img id="logo" src="imagens/logo_compasso2.jpg">
             <h1 id="titulo">Gerenciador</h1>
         </main>
-    </div>
+
+      </div>    
+  <form action="<?php echo tryLogin($_POST['email'],$_POST['password']) ?>" method="post" name="login" id="login-form">
     <nav class="navbar navbar-light bg-light">
       <a href="projeto.html"><button class="btn btn-outline-primary">Inicio</button></a>
       <form class="form-inline">
@@ -24,7 +26,7 @@
             <option>Ponto de atenção</option>
             <option>Mau</option>
         </select>
-        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
+        <input class="form-control mr-sm-2" type="NAME" placeholder="Pesquisar" aria-label="Search">
         <button type="button" class="btn btn-outline-primary" id="buttonGeral" data-toggle="modal" data-target="#barraGeral">Grafico geral</button>
         <div class="modal fade" id="barraGeral" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -46,7 +48,10 @@
               </div>
             </div>
           </div>
-      </form>
+      
+        
+        </form>
+   </form>
     </nav>
     <div class="container">
       <table>
