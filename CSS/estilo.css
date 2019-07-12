@@ -20,7 +20,7 @@ h1,h2,p {
 }
 
 h1, h2 {
-    font-weight: bold
+    font-weight: bold;
 }
 
 main {
@@ -107,4 +107,26 @@ p {
     width: 120px;
     margin-left: 45%;
     margin-top: 50px;
+}
+
+.navbar {
+    filter: drop-shadow(0px 1px 3px #000000);
+}
+
+.table {
+    margin-top: 20px;
+}
+
+.fadeOut{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.invisivel {
+    display: none;
+}
+
+.titulo-tabela {
+    margin-top: 40px;
+    margin-left: 40%;
 }
