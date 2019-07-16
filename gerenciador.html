@@ -14,17 +14,30 @@
             <h1 id="titulo">Gerenciador</h1>
         </main>
     </div>
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-light p-4">
+          <form class="form-inline">
+            <a>Tipo de Situação:</a>
+              <select class="form-control">
+                  <option selected>Todos</option>
+                  <option>Bem</option>
+                  <option>Ponto de atenção</option>
+                  <option>Mau</option>
+              </select>
+              <input class="form-control mr-sm-2" type="search" placeholder="Nome" id="filtrar-nome" aria-label="Search">
+              <input class="form-control mr-sm-2" type="search" placeholder="Parceria" id="filtrar-parceria" aria-label="Search">
+              <input class="form-control mr-sm-2" type="search" placeholder="Local" id="filtrar-local" aria-label="Search">
+              <input class="form-control mr-sm-2" type="search" placeholder="Data" id="filtrar-data" aria-label="Search">
+          </form>
+        </div>
+      </div>
     <nav class="navbar navbar-light bg-light">
       <a href="projeto.html"><button class="btn btn-outline-primary">Inicio</button></a>
       <form class="form-inline">
-        <a>Tipo de Situação:</a>
-        <select class="form-control">
-            <option selected>Todos</option>
-            <option>Bem</option>
-            <option>Ponto de atenção</option>
-            <option>Mau</option>
-        </select>
-        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" id="filtrar-tabela" aria-label="Search">
+        <button class="btn btn-outline-primary pesquisa-nav" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          Pesquisa
+        </button>
         <button type="button" class="btn btn-outline-primary" id="buttonGeral" data-toggle="modal" data-target="#barraGeral">Grafico geral</button>
         <div class="modal fade" id="barraGeral" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -60,16 +73,28 @@
           </thead>
           <tbody>
             <tr class="nomes-lista">
-              <td class="list-group-item list-group-item-action list-group-item-success info-nome">Mark</td>
+              <td class="p-3 mb-2 bg-success text-white info-nome">Mark</td>
+              <td class="p-3 mb-2 bg-success text-white info-parceria">Microsoft</td>
+              <td class="p-3 mb-2 bg-success text-white info-local">New York</td>
+              <td class="p-3 mb-2 bg-success text-white info-data">14/08/2018</td>
             </tr>
             <tr class="nomes-lista">
-              <td class="list-group-item list-group-item-action list-group-item-warning info-nome">Jacob</td>
+              <td class="p-3 mb-2 bg-warning text-white info-nome">Jacob</td>
+              <td class="p-3 mb-2 bg-warning text-white info-parceria">Samsung</td>
+              <td class="p-3 mb-2 bg-warning text-white info-local">Coreia do Norte</td>
+              <td class="p-3 mb-2 bg-warning text-white info-data">21/03/2010</td>
             </tr>
             <tr class="nomes-lista">
-              <td class="list-group-item list-group-item-action list-group-item-danger info-nome">Larry</td>
+              <td class="p-3 mb-2 bg-danger text-white info-nome">Larry</td>
+              <td class="p-3 mb-2 bg-danger text-white info-parceria">Acer</td>
+              <td class="p-3 mb-2 bg-danger text-white info-local">Los Angeles</td>
+              <td class="p-3 mb-2 bg-danger text-white info-data">05/02/2009</td>
             </tr>
             <tr class="nomes-lista">
-              <td class="list-group-item list-group-item-action list-group-item-success info-nome">Irineu</td>
+              <td class="p-3 mb-2 bg-success text-white info-nome">Irineu</td>
+              <td class="p-3 mb-2 bg-success text-white info-parceria">Apple</td>
+              <td class="p-3 mb-2 bg-success text-white info-local">San Francisco</td>
+              <td class="p-3 mb-2 bg-success text-white info-data">10/09/1992</td>
             </tr>
           </tbody>
         </table>
