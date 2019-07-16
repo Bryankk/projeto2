@@ -25,7 +25,7 @@
                 <p>Olá, Ao submeter este formulário, o proprietário verá o seu nome e endereço de e-mail.</p>
             </div>
             <form id="formulário">
-                <h2>1.Como você está se sentindo essa semana?</h2>
+                <h2>1.Como você está se sentindo essa semana? <span class="badge badge-pill badge-danger">Obrigatorio</span></h2>
                     <div class="escolha">
                         <input type="radio" class="resposta" onclick="fncGrupo1()" name="resposta1"/> Estou bem!
                     </div>
@@ -35,7 +35,7 @@
                     <div class="escolha">
                         <input type="radio" class="resposta" onclick="fncGrupo1()" name="resposta1"/> Não estou contente!
                     </div>
-                <h2>2.O sentimento preenchido é em relação a motivos:</h2>
+                <h2>2.O sentimento preenchido é em relação a motivos: <span class="badge badge-pill badge-danger">Obrigatorio</span></h2>
                     <div class="escolha">
                         <input type="radio" class="resposta" onclick="fncGrupo2()" name="resposta2"/> Profissionais
                     </div>
@@ -45,7 +45,7 @@
                     <div class="escolha">
                         <input type="radio" class="resposta" onclick="fncGrupo2()" name="resposta2"/> Ambos
                     </div>
-                <h2>3.Comentar:</h2>
+                <h2>3.Comentar: <span class="badge badge-pill badge-warning">Opcional</span></h2>
                     <textarea id="comentario"></textarea>
                 <div class="botao">
                     <a href="agradecimentos.html"><button type="button" class="btn btn-success" id="enviar" disabled>Enviar</button></a>
