@@ -14,9 +14,23 @@
             <h2 id="titulo">Acompanhamento Semanal!</h2>
         </main>
     </div>
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-light p-4">
+            <p class="text-danger aviso-login">Só pessoas autorizadas podem acessar o gerenciador!</p>
+            <form class="form-inline">
+                <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Senha">
+                <a href="gerenciador.html"><button type="button" class="btn btn-success">Logar</button></a>
+            </form>
+          </div>
+        </div>
         <nav class="navbar navbar-light bg-light">
-            <a href="gerenciador.html"><button class="btn btn-outline-primary">Gerenciador</button></a>
+          <button class="btn btn-outline-primary pesquisa-nav" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            Gerenciador
+          </button>
         </nav>
+    </div>
     <div class="container">
         <form id="pagina1">
             <div class="introducao">

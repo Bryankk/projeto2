@@ -2,25 +2,25 @@ var campoFiltro = document.querySelector("#filtrar-nome");
 
 campoFiltro.addEventListener("input", function(){
     console.log(this.value);
-    var pacientes = document.querySelectorAll(".nomes-lista");
+    var pessoas = document.querySelectorAll(".nomes-lista");
 
     if (this.value.length > 0) {
-        for (var i = 0; i < pacientes.length; i++) {
-            var paciente = pacientes[i];
-            var tdNome = paciente.querySelector(".info-nome");
+        for (var i = 0; i < pessoas.length; i++) {
+            var pessoa = pessoas[i];
+            var tdNome = pessoa.querySelector(".info-nome");
             var nome = tdNome.textContent;
             var expressao = new RegExp(this.value, "i"); 
 
             if (!expressao.test(nome)) {
-                paciente.classList.add("invisivel");
+                pessoa.classList.add("invisivel");
             } else {
-                paciente.classList.remove("invisivel");
+                pessoa.classList.remove("invisivel");
             }
         }
     } else {
-        for (var i = 0; i < pacientes.length; i++) {
-            var paciente = pacientes[i];
-            paciente.classList.remove("invisivel");
+        for (var i = 0; i < pessoas.length; i++) {
+            var pessoa = pessoas[i];
+            pessoa.classList.remove("invisivel");
         }
     }
 });
@@ -29,25 +29,25 @@ var campoFiltro = document.querySelector("#filtrar-parceria");
 
 campoFiltro.addEventListener("input", function(){
     console.log(this.value);
-    var pacientes = document.querySelectorAll(".nomes-lista");
+    var pessoas = document.querySelectorAll(".nomes-lista");
 
     if (this.value.length > 0) {
-        for (var i = 0; i < pacientes.length; i++) {
-            var paciente = pacientes[i];
-            var tdNome = paciente.querySelector(".info-parceria");
+        for (var i = 0; i < pessoas.length; i++) {
+            var pessoa = pessoas[i];
+            var tdNome = pessoa.querySelector(".info-parceria");
             var nome = tdNome.textContent;
             var expressao = new RegExp(this.value, "i"); 
 
             if (!expressao.test(nome)) {
-                paciente.classList.add("invisivel");
+                pessoa.classList.add("invisivel");
             } else {
-                paciente.classList.remove("invisivel");
+                pessoa.classList.remove("invisivel");
             }
         }
     } else {
-        for (var i = 0; i < pacientes.length; i++) {
-            var paciente = pacientes[i];
-            paciente.classList.remove("invisivel");
+        for (var i = 0; i < pessoas.length; i++) {
+            var pessoa = pessoas[i];
+            pessoa.classList.remove("invisivel");
         }
     }
 });
@@ -56,25 +56,25 @@ var campoFiltro = document.querySelector("#filtrar-local");
 
 campoFiltro.addEventListener("input", function(){
     console.log(this.value);
-    var pacientes = document.querySelectorAll(".nomes-lista");
+    var pessoas = document.querySelectorAll(".nomes-lista");
 
     if (this.value.length > 0) {
-        for (var i = 0; i < pacientes.length; i++) {
-            var paciente = pacientes[i];
-            var tdNome = paciente.querySelector(".info-local");
+        for (var i = 0; i < pessoas.length; i++) {
+            var pessoa = pessoas[i];
+            var tdNome = pessoa.querySelector(".info-local");
             var nome = tdNome.textContent;
             var expressao = new RegExp(this.value, "i"); 
 
             if (!expressao.test(nome)) {
-                paciente.classList.add("invisivel");
+                pessoa.classList.add("invisivel");
             } else {
-                paciente.classList.remove("invisivel");
+                pessoa.classList.remove("invisivel");
             }
         }
     } else {
-        for (var i = 0; i < pacientes.length; i++) {
-            var paciente = pacientes[i];
-            paciente.classList.remove("invisivel");
+        for (var i = 0; i < pessoas.length; i++) {
+            var pessoa = pessoas[i];
+            pessoa.classList.remove("invisivel");
         }
     }
 });
@@ -83,25 +83,25 @@ var campoFiltro = document.querySelector("#filtrar-data");
 
 campoFiltro.addEventListener("input", function(){
     console.log(this.value);
-    var pacientes = document.querySelectorAll(".nomes-lista");
+    var pessoas = document.querySelectorAll(".nomes-lista");
 
     if (this.value.length > 0) {
-        for (var i = 0; i < pacientes.length; i++) {
-            var paciente = pacientes[i];
-            var tdNome = paciente.querySelector(".info-data");
+        for (var i = 0; i < pessoas.length; i++) {
+            var pessoa = pessoas[i];
+            var tdNome = pessoa.querySelector(".info-data");
             var nome = tdNome.textContent;
             var expressao = new RegExp(this.value, "i"); 
 
             if (!expressao.test(nome)) {
-                paciente.classList.add("invisivel");
+                pessoa.classList.add("invisivel");
             } else {
-                paciente.classList.remove("invisivel");
+                pessoa.classList.remove("invisivel");
             }
         }
     } else {
-        for (var i = 0; i < pacientes.length; i++) {
-            var paciente = pacientes[i];
-            paciente.classList.remove("invisivel");
+        for (var i = 0; i < pessoas.length; i++) {
+            var pessoa = pessoas[i];
+            pessoa.classList.remove("invisivel");
         }
     }
 });
